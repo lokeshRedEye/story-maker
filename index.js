@@ -6,7 +6,7 @@ import cors from "cors"; // Import CORS
 // dotenv.config(); // Load environment variables
 
 const app = express();
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+const genAI = new GoogleGenerativeAI("AIzaSyBx7nG-qrJTIs2_awqJD4ujynieZPWY7tg");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 const port = 5000;
